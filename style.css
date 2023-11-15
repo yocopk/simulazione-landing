@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -16,13 +17,11 @@ body{
     max-width: 1200px;
 }
 
-header{
-    border-bottom: 2px solid black;
-}
-
 nav{
     background-color: white;
     border-bottom: 2px solid red;
+    position: fixed;
+    width: 100vw;
 }
 
 nav .wrapper{
@@ -106,6 +105,11 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.btns a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .btn-1, .btn-2{
