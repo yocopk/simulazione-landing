@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
-    <link rel="stylesheet" href="about.css" />
+    <title>Contattaci</title>
+    <link rel="stylesheet" href="contact.css" />
   </head>
   <body>
     <header>
@@ -39,48 +39,46 @@
     </header>
 
     <main>
-      <section class="about-container">
-        <div class="wrapper">
-          <div class="about-img-container">
-            <img src="assets/about-image.jpg" alt="" />
-          </div>
-          <div class="description-container">
-            <h1 class="text title">La nostra storia</h1>
-            <p class="text description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
-              aliquam odit quis quia voluptatibus! Ullam aliquid atque
-              reiciendis alias labore aliquam iste iure itaque similique? Qui
-              optio commodi enim dignissimos?
-            </p>
-            <h2 class="text subtitle"><span>1945</span> - L'inizio</h2>
-            <p class="text description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab
-              quaerat ex numquam assumenda harum nesciunt facere nam inventore
-              cum earum consequatur tempora itaque animi nihil recusandae
-              provident, amet velit.
-            </p>
-            <h2 class="text subtitle"><span>1983</span> - Il successo</h2>
-            <p class="text description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
-              ullam esse. Optio obcaecati ipsam atque neque ad libero velit hic
-              ipsum explicabo recusandae. Exercitationem asperiores sint at
-              ipsum vitae eos!
-            </p>
-            <h2 class="text subtitle"><span>2012</span> - Un franchising</h2>
-            <p class="text description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              qui labore, suscipit praesentium soluta placeat ducimus laborum
-              cupiditate voluptatibus asperiores voluptatum ratione tenetur
-              minus enim quidem itaque magnam, ipsam quas.
-            </p>
-            <h2 class="text subtitle"><span>2023</span> - Il presente</h2>
-            <p class="text description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
-              fugit aspernatur quibusdam earum reprehenderit quis deserunt ea,
-              at deleniti totam voluptate quam ipsum esse rem alias culpa odit
-              eum rerum.
-            </p>
-          </div>
+      <section class="contact-section">
+        <div class="form-container">
+          <form action="">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required />
+
+            <label for="cognome">Cognome:</label>
+            <input type="text" id="cognome" name="cognome" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label>Messaggio:</label>
+            <textarea
+              id="messaggio"
+              name="messaggio"
+              rows="4"
+              required
+            ></textarea>
+
+            <div class="privacy">
+              <label
+                >Privacy:
+                <input
+                  type="radio"
+                  id="accetta"
+                  name="privacy"
+                  value="accetta"
+                  required
+              /></label>
+            </div>
+
+            <label
+              >Newsletter:
+              <input type="checkbox" id="newsletter" name="newsletter" />
+            </label>
+
+            <button type="submit">Invia</button>
+          </form>
+          <img src="assets/contatti-image.jpg" alt="" />
         </div>
       </section>
     </main>
