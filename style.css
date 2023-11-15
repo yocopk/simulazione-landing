@@ -37,6 +37,7 @@ nav .wrapper{
     justify-content: space-between;
     align-items: center;
     gap: 25px;
+    margin-left: 10px;
 }
 
 .logo{
@@ -51,6 +52,11 @@ nav .wrapper{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     letter-spacing: 2px;
+}
+
+.menu svg{
+    margin-right: 10px;
+    display: none;
 }
 
 ul{
@@ -91,6 +97,7 @@ ul{
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-transform: capitalize;
+    text-align: center;
 }
 
 .jumbo .cta .btns{
@@ -301,4 +308,30 @@ footer p{
 .copyright p{
     font-size: 10px;
     font-weight: 100;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 500px){
+    ul{
+        display: none;
+    }
+
+    .menu svg{
+        font-size: 20px;
+        display: block;
+    }
+
+    .risto-section .wrapper{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cards-container{
+        flex-direction: column;
+    }
+
+    .footer-container{
+        margin: 50px 20px;
+    }
 }
