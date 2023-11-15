@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(29, 29, 29);
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+nav{
+    background-color: white;
+    border-bottom: 3px solid red;
+}
+
+nav .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin-left: 10px;
+}
+
+.logo{
+    width: 50px;
+    margin-top: 5px;
+}
+
+.logo-text{
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.menu svg{
+    margin-right: 10px;
+    display: none;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu ul li{
+    list-style-type: none;
+}
+
+.link{
+    text-decoration: none;
+    color: rgb(207, 8, 8);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.link:hover{
+    color: red;
+}
+
+/* ABOUT SECTION */
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-container{
+    padding: 50px;
+    border-bottom: 3px solid red;
+}
+
+.about-img-container img{
+    width: 350px;
+    border-radius: 15px;
+    border: 3px solid white;
+}
+
+.text{
+    color: white;
+    width: 90%;
+    margin-top: 10px;
+}
+
+.description-container span{
+    color: red;
+
+}
+
+
+/* FOOTER */
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 80px;
+}
+
+.footer-pages{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-policy{
+    display: flex;
+    flex-direction: column;
+}
+
+footer p{
+    color: white;
+    font-weight: 700;
+}
+
+.footer-logo p{
+    color: red;
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-link{
+    color: white;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.footer-logo img{
+    width: 70px;
+}
+
+.copyright{
+    border-top: 2px solid gray;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright p{
+    font-size: 10px;
+    font-weight: 100;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 500px){
+    ul{
+        display: none;
+    }
+
+    .menu svg{
+        font-size: 20px;
+        display: block;
+    }
+
+    .about-container .wrapper{
+        flex-direction: column;
+    }
+
+    .footer-container{
+        margin: 50px 20px;
+    }
+}

@@ -81,6 +81,8 @@ ul{
     color: red;
 }
 
+/* JUMBO */
+
 .jumbo{
     background-image: url("assets/jumbo.jpg");
     background-position: center;
