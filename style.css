@@ -245,3 +245,60 @@ ul{
 .card-3:hover{
     transform: scale(1.1);
 }
+
+/* FOOTER */
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 80px;
+}
+
+.footer-pages{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-policy{
+    display: flex;
+    flex-direction: column;
+}
+
+footer p{
+    color: white;
+    font-weight: 700;
+}
+
+.footer-logo p{
+    color: red;
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-link{
+    color: white;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.footer-logo img{
+    width: 70px;
+}
+
+.copyright{
+    border-top: 2px solid gray;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright p{
+    font-size: 10px;
+    font-weight: 100;
+}
