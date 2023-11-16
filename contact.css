@@ -87,7 +87,7 @@ form{
 }
 
 input{
-    padding: 10px 30px;
+    padding: 15px 60px;
 }
 
 label{
@@ -127,6 +127,34 @@ form button{
 form button:hover{
     background-color: red;
 }
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("assets/contatti-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    border-radius: 15px;
+    transition: filter 0.5s ease;
+}
+
+.img-container p{
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.img-container:hover{
+    filter: brightness(50%);
+}
+
+.img-container p:hover{
+    opacity: 1;
+}
+
 
 
 /* FOOTER */
