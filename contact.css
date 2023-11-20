@@ -79,13 +79,13 @@ ul{
 }
 
 .link:hover{
-    color: red;
-    border-color: red;
+    color: rgb(221, 3, 3);
+    border-color: rgb(221, 3, 3);
 }
 
 .link.active{
-    color: red;
-    border-color: red;
+    color: rgb(221, 3, 3);
+    border-color: rgb(221, 3, 3);
 }
 
 /* FORM */
