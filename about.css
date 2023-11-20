@@ -17,9 +17,15 @@ body{
     max-width: 1200px;
 }
 
+header{
+    position: fixed;
+    z-index: 1;
+}
+
 nav{
     background-color: white;
-    border-bottom: 3px solid red;
+    border-bottom: 2px solid red;
+    width: 100vw;
 }
 
 nav .wrapper{
@@ -69,27 +75,39 @@ ul{
 
 .link{
     text-decoration: none;
-    color: rgb(207, 8, 8);
+    color: rgb(65, 65, 65);
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid transparent;
 }
 
 .link:hover{
     color: red;
+    border-color: red;
 }
 
+.link.active{
+    color: red;
+    border-color: red;
+}
 /* ABOUT SECTION */
 
 .wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
 }
 
 .about-container{
-    padding: 50px;
+    padding: 150px 30px;
     border-bottom: 3px solid red;
+}
+
+.description-container h1{
+    font-size: 38px;
+    border-bottom: 2px solid red;
 }
 
 .about-img-container img{
@@ -112,20 +130,28 @@ ul{
 
 /* FOOTER */
 
+footer{
+    background-color: black;
+    border-top: 3px solid red;
+}
+
 .footer-container{
     display: flex;
     justify-content: space-between;
     margin: 50px 80px;
+    padding: 20px;
 }
 
 .footer-pages{
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .footer-policy{
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 footer p{
